@@ -81,3 +81,7 @@ if(QNXNTO)
 else()
   add_subdirectory(src/sqlite_wrapper)
 endif()
+
+if(BUILD_TESTS)
+  add_subdirectory(test)
+endif()

@@ -50,7 +50,7 @@
 #include "application_manager/resumption/resume_ctrl.h"
 
 #ifdef EXTERNAL_PROPRIETARY_MODE
-#include "policy/policy_external/include/policy/policy_types.h"
+#include "policy/policy_types.h"
 #endif
 
 namespace test {

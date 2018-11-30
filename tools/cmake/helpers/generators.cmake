@@ -35,6 +35,16 @@ set(GENERATORS_INCLUDED ON)
 
 find_package(PythonInterp REQUIRED)
 
+if(NOT PYTHONINTERP_FOUND)
+  message(STATUS "Python interpreter is not found")
+  message(STATUS "To install it type in the command line:")
+  message(STATUS "sudo apt-get install python")
+  message(FATAL_ERROR "Exiting!")
+endif(NOT PYTHONINTERP_FOUND)
+
+set(INTEFRACE_GENERATOR "${CMAKE_SOURCE_DIR}/tools/InterfaceGenerator/Generator.py")
+set(INTEFRACE_GENERATOR_CMD ${PYTHON_EXECUTABLE} -B ${INTEFRACE_GENERATOR})
+
 get_filename_component(INTEFRACE_GENERATOR_DIR
   "../../InterfaceGenerator"
   REALPATH

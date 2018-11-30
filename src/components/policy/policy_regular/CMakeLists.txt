@@ -48,3 +48,7 @@ install(TARGETS ${PROJECT_NAME}
 
 add_subdirectory(src/policy_table)
 add_subdirectory(src/usage_statistics)
+
+if(BUILD_TESTS)
+  add_subdirectory(test)
+endif()
