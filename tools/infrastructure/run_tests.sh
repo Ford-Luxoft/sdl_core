@@ -1,4 +1,5 @@
-#/bin/bash
+#!/usr/bin/env sh
+
 # Copyright (c) 2019, Ford Motor Company
 # All rights reserved.
 #
