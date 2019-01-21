@@ -82,4 +82,4 @@ dir=`pwd`
 echo "Test project $dir"
 run_all_tests "$dir" "$1"
 
-exit $failed_test
+exit $failed_test_count
